@@ -80,7 +80,7 @@ export default class ProductManager {
             }
         } catch (error) {
             console.error(error);
-            
+
         }
     }
 
@@ -108,7 +108,7 @@ export default class ProductManager {
 }
 
 const main = async () => {
-    //instancio la clase ProductManager
+    
     const Manager = await new ProductManager("products.json");
     
     const productos = await Manager.getProducts();
